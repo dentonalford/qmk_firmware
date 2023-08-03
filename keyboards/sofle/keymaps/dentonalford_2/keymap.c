@@ -101,7 +101,7 @@ void ql_game_toggle_reset(tap_dance_state_t *state, void *user_data);
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT(
     //| --------- | --------- | --------- | --------- | --------- | --------- |                       | --------- | --------- | --------- | --------- | --------- | --------- |
-        KC_GRAVE,   KC_1,       KC_2,       KC_3,       KC_4,       TD(TD_GAME_TOGGLE),                   KC_6,       KC_7,       KC_8,       KC_9,       KC_0,       KC_MINUS,
+        KC_GRAVE,   KC_1,       KC_2,       KC_3,       KC_4,       TD(TD_GAME_TOGGLE),                 KC_6,       KC_7,       KC_8,       KC_9,       KC_0,       KC_MINUS,
     //| --------- | --------- | --------- | --------- | --------- | --------- |                       | --------- | --------- | --------- | --------- | --------- | --------- |
         KC_ESC,     KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,                               KC_Y,       KC_U,       KC_I,       KC_O,       KC_P,       KC_BSPC,
     //| --------- | --------- | --------- | --------- | --------- | --------- |                       | --------- | --------- | --------- | --------- | --------- | --------- |
@@ -117,11 +117,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //| --------- | --------- | --------- | --------- | --------- | --------- |                       | --------- | --------- | --------- | --------- | --------- | --------- |
         KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                            KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
     //| --------- | --------- | --------- | --------- | --------- | --------- |                       | --------- | --------- | --------- | --------- | --------- | --------- |
-        KC_TRNS,    XXXXXXX,    KC_HASH,    KC_DLR,     KC_PERC,    KC_CIRC,                            KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
+        KC_TRNS,    KC_EXLM,    KC_AT,      KC_HASH,    KC_DLR,     KC_PERC,                            KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
     //| --------- | --------- | --------- | --------- | --------- | --------- |                       | --------- | --------- | --------- | --------- | --------- | --------- |
-        KC_TRNS,    XXXXXXX,    KC_EXLM,    KC_MINS,    KC_QUOT,    KC_PIPE,                            KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
+        KC_TRNS,    XXXXXXX,    KC_GRV,     KC_MINS,    KC_QUOT,    KC_PIPE,                            KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
     //| --------- | --------- | --------- | --------- | --------- | --------- | ---------\ /--------- | --------- | --------- | --------- | --------- | --------- | --------- |
-        XXXXXXX,    XXXXXXX,    KC_AT,      KC_UNDS,    KC_DQUO,    KC_BSLS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
+        XXXXXXX,    XXXXXXX,    KC_TILD,    KC_UNDS,    KC_DQUO,    KC_BSLS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
     //| --------- | --------- | --------- | --------- | --------- | --------- | ---------| |--------- | --------- | --------- | --------- | --------- | --------- | --------- |
                                 KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
     //                        \ --------- | --------- | --------- | --------- | ---------/ \--------- | --------- | --------- | --------- | --------- /
@@ -131,9 +131,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //| --------- | --------- | --------- | --------- | --------- | --------- |                       | --------- | --------- | --------- | --------- | --------- | --------- |
         KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                            KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
     //| --------- | --------- | --------- | --------- | --------- | --------- |                       | --------- | --------- | --------- | --------- | --------- | --------- |
-        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                            KC_AMPR,    KC_ASTR,    KC_LBRC,    KC_RBRC,    KC_TRNS,    KC_TRNS,
+        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                            KC_CIRC,    KC_AMPR,    KC_LBRC,    KC_RBRC,    KC_TRNS,    KC_TRNS,
     //| --------- | --------- | --------- | --------- | --------- | --------- |                       | --------- | --------- | --------- | --------- | --------- | --------- |
-        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                            KC_RABK,    KC_EQL,     KC_LPRN,    KC_RPRN,    KC_TRNS,    KC_TRNS,
+        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                            KC_RABK,    KC_EQL,     KC_LPRN,    KC_RPRN,    KC_ASTR,    KC_TRNS,
     //| --------- | --------- | --------- | --------- | --------- | --------- | ---------\ /--------- | --------- | --------- | --------- | --------- | --------- | --------- |
         KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_LABK,    KC_PLUS,    KC_LCBR,    KC_RCBR,    KC_TRNS,    KC_TRNS,
     //| --------- | --------- | --------- | --------- | --------- | --------- | ---------| |--------- | --------- | --------- | --------- | --------- | --------- | --------- |
@@ -158,11 +158,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //| --------- | --------- | --------- | --------- | --------- | --------- |                       | --------- | --------- | --------- | --------- | --------- | --------- |
         KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                            KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
     //| --------- | --------- | --------- | --------- | --------- | --------- |                       | --------- | --------- | --------- | --------- | --------- | --------- |
-        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                            KC_TRNS,    KC_7,       KC_8,       KC_9,       KC_TRNS,    KC_TRNS,
+        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                            KC_DOT,     KC_7,       KC_8,       KC_9,       KC_ASTR,    KC_TRNS,
     //| --------- | --------- | --------- | --------- | --------- | --------- |                       | --------- | --------- | --------- | --------- | --------- | --------- |
-        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                            KC_TRNS,    KC_4,       KC_5,       KC_6,       KC_TRNS,    KC_TRNS,
+        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                            KC_COMM,    KC_4,       KC_5,       KC_6,       KC_MINS,    KC_TRNS,
     //| --------- | --------- | --------- | --------- | --------- | --------- | ---------\ /--------- | --------- | --------- | --------- | --------- | --------- | --------- |
-        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_0,       KC_1,       KC_2,       KC_3,       KC_TRNS,    KC_TRNS,
+        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_0,       KC_1,       KC_2,       KC_3,       KC_PLUS,    KC_TRNS,
     //| --------- | --------- | --------- | --------- | --------- | --------- | ---------| |--------- | --------- | --------- | --------- | --------- | --------- | --------- |
                                 KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
     //                        \ --------- | --------- | --------- | --------- | ---------/ \--------- | --------- | --------- | --------- | --------- /
